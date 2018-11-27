@@ -1,0 +1,191 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.menu
+{
+	text-align: center;
+    position: relative;
+    height: 38px;
+    margin-top: 64px;
+    margin-bottom: 64px;
+}
+
+.menu > .sMenu
+{
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translateX(-50%);
+}
+
+.menu > a
+{
+	font-size: 32px;
+	margin-left: 16px;
+	margin-right: 16px;
+	text-decoration: none;
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    display: block;
+    text-align: center;
+    vertical-align: center;
+    margin: auto;
+}
+
+.author
+{
+    text-align: center;
+    padding-left: 20%;
+    font-style: italic;
+}
+
+.col20
+{
+    width: 20%;
+}
+
+.col50
+{
+    width: 50%;
+}
+
+img.img50p
+{
+    width: 50%;
+}
+
+img.img30p
+{
+    width: 30%;
+}
+
+.aleft
+{
+    text-align: left;
+}
+
+.fleft
+{
+    float: left;
+}
+
+.fivMenu
+{
+    left:240px !important; 
+    top: 0px !important; 
+}
+
+ul.forMenu > li
+{
+    float: none !important;
+}
+
+.menu ul {
+    list-style: none;
+    display: block;
+    margin:0px;
+    padding:0px;
+}
+
+ul:after {
+    display: block;
+    float: none;
+    content: ' ';
+    clear: both;
+}
+
+ul.sMenu > li {
+    float: left;
+    position: relative;
+}
+
+ul.sMenu > li > a {
+    display: block;
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    background-color: #ad0808;
+}
+
+ul.sMenu > li > a:hover {
+    background-color: #aa4e03;
+}
+
+ul.tMenu {
+    position: absolute;
+    width: 240px;
+    top: 38px;
+    left:0px;
+    display: none;
+    background-color: white;
+}
+
+ul.tMenu > li {
+    display: block;
+}
+
+ul.tMenu > li > a {
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    color: #ffffff;
+    background-color: #da570f;
+}
+
+ul.tMenu > li > a:hover {
+    background-color: #eb9316;
+    text-decoration: underline;
+}
+
+ul.sMenu > li:hover > ul.tMenu {
+    display: block;
+}
+
+.fixul {
+    margin-right: 20px;
+}
+
+@media print {
+    .fixul {
+        margin-right: 25px;
+    }
+    .col20
+    {
+        width: 100%;
+    }
+    .row > div:first-child {
+        visibility: hidden;
+        width: 0px;
+        height: 0px;
+        position: absolute;
+        left: -400%;
+        top: -400%;
+    }
+    .row > div:last-child {
+        visibility: hidden;
+        width: 0px;
+        height: 0px;
+        position: absolute;
+        left: -400px;
+        top: -400px;
+    }
+    .menu {
+        visibility: hidden;
+        width: 0px;
+        height: 0px;
+        position: absolute;
+        left: -400px;
+        top: -400px;
+    }
+    body {
+        font-size: 24px;
+    }
+}
