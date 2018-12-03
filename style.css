@@ -16,9 +16,6 @@ body {
 {
     margin: 0;
     position: absolute;
-    left: 50%;
-    margin-right: -50%;
-    transform: translateX(-50%);
 }
 
 .menu > a
@@ -57,9 +54,9 @@ body {
     width: 50%;
 }
 
-img.img50p
+img.img40p
 {
-    width: 50%;
+    width: 40%;
 }
 
 img.img30p
@@ -153,15 +150,18 @@ ul.sMenu > li:hover > ul.tMenu {
     margin-right: 20px;
 }
 
-@media print {
-    .fixul {
+@media print 
+{
+    .fixul 
+    {
         margin-right: 25px;
     }
     .col20
     {
         width: 100%;
     }
-    .row > div:first-child {
+    .row > div:first-child 
+    {
         visibility: hidden;
         width: 0px;
         height: 0px;
@@ -169,7 +169,8 @@ ul.sMenu > li:hover > ul.tMenu {
         left: -400%;
         top: -400%;
     }
-    .row > div:last-child {
+    .row > div:last-child 
+    {
         visibility: hidden;
         width: 0px;
         height: 0px;
@@ -177,7 +178,8 @@ ul.sMenu > li:hover > ul.tMenu {
         left: -400px;
         top: -400px;
     }
-    .menu {
+    .menu 
+    {
         visibility: hidden;
         width: 0px;
         height: 0px;
@@ -185,7 +187,12 @@ ul.sMenu > li:hover > ul.tMenu {
         left: -400px;
         top: -400px;
     }
-    body {
+    .img40p
+    {
+        display: none;
+    }
+    body 
+    {
         font-size: 24px;
     }
 }
