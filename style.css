@@ -162,30 +162,15 @@ ul.sMenu > li:hover > ul.tMenu {
     }
     .row > div:first-child 
     {
-        visibility: hidden;
-        width: 0px;
-        height: 0px;
-        position: absolute;
-        left: -400%;
-        top: -400%;
+        display: none;
     }
     .row > div:last-child 
     {
-        visibility: hidden;
-        width: 0px;
-        height: 0px;
-        position: absolute;
-        left: -400px;
-        top: -400px;
+        display: none;
     }
     .menu 
     {
-        visibility: hidden;
-        width: 0px;
-        height: 0px;
-        position: absolute;
-        left: -400px;
-        top: -400px;
+        display: none;
     }
     .img40p
     {
